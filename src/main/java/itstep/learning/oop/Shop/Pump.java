@@ -1,4 +1,4 @@
-package itstep.learning.oop;
+package itstep.learning.oop.Shop;
 
 import java.util.Locale;
 

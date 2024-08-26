@@ -1,8 +1,7 @@
-package itstep.learning.oop;
+package itstep.learning.oop.Shop;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 public class Shop {
     private List<Product> products;
