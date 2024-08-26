@@ -2,6 +2,7 @@ package itstep.learning.oop;
 
 import java.util.Locale;
 
+@Warranty(3)
 public class Lamp  extends Product{
 
     private double power;
@@ -25,8 +26,8 @@ public class Lamp  extends Product{
     @Override
     public String getCard() {
         return String.format(Locale.ROOT,
-                "Lamp: '%s', Power: %.1f W",
-                super.getManufacturer(), this.getPower()
+                "Lamp: '%s', Power: %.1f W%s",
+                super.getManufacturer(), this.getPower(),super.getWarrantyInfo()
         );
     }
 }

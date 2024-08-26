@@ -2,6 +2,7 @@ package itstep.learning.oop;
 
 import java.util.Locale;
 
+@Warranty(2)
 public class Pump extends Product {
     int productivity;
 
@@ -21,8 +22,8 @@ public class Pump extends Product {
     @Override
     public String getCard() {
         return String.format(Locale.ROOT,
-                "Pump: '%s', Productivity: %d l/h",
-                super.getManufacturer(), this.getProductivity()
+                "Pump: '%s', Productivity: %d l/h%s",
+                super.getManufacturer(), this.getProductivity(),super.getWarrantyInfo()
         );
     }
 }

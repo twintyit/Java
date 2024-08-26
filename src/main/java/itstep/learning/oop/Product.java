@@ -1,5 +1,7 @@
 package itstep.learning.oop;
 
+import java.util.Locale;
+
 public abstract class Product {
     private String manufacturer;
 
@@ -11,5 +13,14 @@ public abstract class Product {
 
     public void setManufacturer(String manufacturer){
         this.manufacturer = manufacturer;
+    }
+
+    public String getWarrantyInfo() {
+        if (this.getClass().isAnnotationPresent(Warranty.class)) {
+            Warranty warranty = this.getClass().getAnnotation(Warranty.class);
+            return String.format(Locale.ROOT, ", Warranty: %d years", warranty.value());
+        } else {
+            return ", No warranty";
+        }
     }
 }
