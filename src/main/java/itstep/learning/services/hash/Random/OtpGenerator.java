@@ -1,8 +1,8 @@
-package itstep.learning.oop.Random;
+package itstep.learning.services.hash.Random;
 
 import java.security.SecureRandom;
 
-public class OTPGenerator implements RandomStringGenerator {
+public class OtpGenerator implements RandomStringGenerator {
     private static final String DIGITS = "0123456789";
     private static final int LENGTH = 6;
     private final SecureRandom random = new SecureRandom();

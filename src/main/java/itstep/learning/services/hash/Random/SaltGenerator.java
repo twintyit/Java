@@ -1,4 +1,4 @@
-package itstep.learning.oop.Random;
+package itstep.learning.services.hash.Random;
 
 import java.security.SecureRandom;
 import java.util.Base64;

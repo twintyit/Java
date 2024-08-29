@@ -1,4 +1,7 @@
-package itstep.learning.oop.Random;
+package itstep.learning.services.hash.Random;
+
+
+import com.google.inject.Inject;
 
 public class RandomStringService {
 
@@ -7,10 +10,11 @@ public class RandomStringService {
     private final RandomStringGenerator otpGenerator;
     private final RandomStringGenerator passwordGenerator;
 
-    public RandomStringService(RandomStringGenerator fileNameGenerator,
-                               RandomStringGenerator saltGenerator,
-                               RandomStringGenerator otpGenerator,
-                               RandomStringGenerator passwordGenerator) {
+    @Inject
+    public RandomStringService(FileNameGenerator fileNameGenerator,
+                               SaltGenerator saltGenerator,
+                               OtpGenerator otpGenerator,
+                               PasswordGenerator passwordGenerator) {
         this.fileNameGenerator = fileNameGenerator;
         this.saltGenerator = saltGenerator;
         this.otpGenerator = otpGenerator;
