@@ -37,6 +37,6 @@ build/
 ### Mac OS ###
 .DS_Store
 
-src/main/java/itstep/learning/fs/ConfigWriter.java
+src/main/java/itstep/learning/fs/ConfigWriter
 
 src/main/resources/db.ini
